@@ -1,3 +1,7 @@
+.center {
+  text-align: center;
+}
+
 .calculator {
     background-color: rgb(182, 182, 182);
     width: 300px;
@@ -39,5 +43,8 @@
   button:hover {
     background-color: rgb(182, 182, 182);
   }
-  
-  
+  .center {
+    display: flex;
+    justify-content: center;
+
+  }

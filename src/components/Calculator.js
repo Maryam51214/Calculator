@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Calculator.css'; // You can define your CSS styles in this file
+import './Calculator.css'; 
 
 function Calculator() {
   const [expression, setExpression] = useState('');
@@ -12,7 +12,7 @@ function Calculator() {
       } catch {
         setExpression('Error');
       }
-    } else if (value === '√') {
+  } else if (value === '√') {               
       try {
         const result = Math.sqrt(parseFloat(expression));
         setExpression(result.toString());
@@ -26,7 +26,7 @@ function Calculator() {
       } catch {
         setExpression('Error');
       }
-    } else if (value === '^3') {
+    } else if (value === '^3') {               
       try {
         const result = Math.pow(parseFloat(expression), 3);
         setExpression(result.toString());
@@ -65,7 +65,7 @@ function Calculator() {
         <button onClick={() => handleClick('√')}>√</button>
         <button onClick={() => handleClick('^2')}>^2</button>
         <button onClick={() => handleClick('^3')}>^3</button>
-        <button onClick={() => handleClick('^')}>^</button>
+        <br></br>
         <button onClick={() => handleClick('C')}>C</button>
         <button onClick={() => handleClick('←')}>←</button>
       </div>

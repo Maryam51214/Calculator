@@ -1,12 +1,13 @@
 import React from 'react';
-import Calculator from './components/Calculator'; // Import the Calculator component
-import './App.css'; // Import your CSS file for global styles
+import Calculator from './components/Calculator'; 
+import './App.css';
 
 function App() {
   return (
-    <div className="app">
-      <h1>Scientific Calculator</h1>
-      <Calculator /> {/* Render the Calculator component */}
+    <div style={{ textAlign: 'center' }} >
+    <h1>Scientific Calculator</h1>
+      <Calculator /> 
+      {/* Render the Calculator component */}
     </div>
   );
 }
